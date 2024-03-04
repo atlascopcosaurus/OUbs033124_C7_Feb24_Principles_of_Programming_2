@@ -80,3 +80,5 @@ Employee <|-- ChildEmployee1
 Employee <|-- ChildEmployee2
 @enduml
 ```
+
+![classDiagram](./1_4_enhanced.svg)
