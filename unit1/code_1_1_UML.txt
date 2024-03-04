@@ -1,0 +1,9 @@
+@startuml
+class Employee {
+        name
+    age
+    id
+    salary
+    __init__()
+}
+@enduml
