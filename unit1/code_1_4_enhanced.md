@@ -81,4 +81,4 @@ Employee <|-- ChildEmployee2
 @enduml
 ```
 
-![classDiagram](./1_4_enhanced.svg)
+![classDiagram](./1_5_enhanced.png)
