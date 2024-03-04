@@ -55,4 +55,25 @@ Here's a brief overview of how single inheritance is represented in the code:
 - The `ChildEmployee` class inherits from `Employee` and adds an additional attribute (`id`), showcasing the subclass's ability to extend the parent class's functionality.
 - The `ChildEmployee` class uses `super().__init__(name, age, salary)` to call the parent class's constructor, ensuring that the inherited attributes are initialized according to the parent class's definition.
 
-This structure allows `ChildEmployee` to have all the attributes and methods of `Employee`, plus any additional ones defined in `ChildEmployee`, following the principle of single inheritance.s
+This structure allows `ChildEmployee` to have all the attributes and methods of `Employee`, plus any additional ones defined in `ChildEmployee`, following the principle of single inheritance.
+
+```plantuml
+@startuml
+class Employee {
+        name
+    age
+    salary
+    __init__()
+}
+class ChildEmployee {
+        name
+    age
+    salary
+    id
+    __init__()
+}
+Employee <|-- ChildEmployee
+@enduml
+```
+
+![classDiagram](./1_2_enhanced.svg)

@@ -1,0 +1,16 @@
+@startuml
+class Employee {
+        name
+    age
+    salary
+    __init__()
+}
+class ChildEmployee {
+        name
+    age
+    salary
+    id
+    __init__()
+}
+Employee <|-- ChildEmployee
+@enduml

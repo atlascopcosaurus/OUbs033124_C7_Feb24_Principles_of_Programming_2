@@ -63,3 +63,26 @@ Given the original setup and the proposed simplification:
 In the scenario where `ChildEmployee1` and `ChildEmployee2` are explicitly designed to extend the functionality of their parent class by adding new attributes or methods, the inheritance demonstrates a clear example of multilevel inheritance, with each level introducing new properties or behaviors.
 
 To summarize, the proposed simplification maintains the **multilevel inheritance** type, characterized by a hierarchy where classes inherit from other classes in a linear fashion, potentially adding or extending functionality at each level.
+
+```plantuml
+@startuml
+class Employee {
+        name
+    age
+    salary
+    __init__()
+}
+class ChildEmployee1 {
+        role
+    __init__()
+}
+class ChildEmployee2 {
+        department
+    __init__()
+}
+Employee <|-- ChildEmployee1
+ChildEmployee1 <|-- ChildEmployee2
+@enduml
+```
+
+![classDiagram](./1_3_enhanced.svg)
