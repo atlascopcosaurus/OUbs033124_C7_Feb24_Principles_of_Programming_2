@@ -10,7 +10,7 @@ class Employee1:
 
 class Employee2:
     def __init__(self, name, age, salary, department=None):
-        self.name = names
+        self.name = name
         self.age = age
         self.salary = salary
         self.department = department  # Added to demonstrate a different attribute
@@ -37,3 +37,9 @@ emp2 = ChildEmployee('HHarshit', 23, 2000, 'Manager', 'HR')
 
 print(emp1)
 print(emp2)
+
+
+# Output
+# Employee(Name: Harshit, Age: 22, Salary: 1000), Role: Engineer, Department: Development
+# Employee(Name: HHarshit, Age: 23, Salary: 2000), Role: Manager, Department: HR
+
