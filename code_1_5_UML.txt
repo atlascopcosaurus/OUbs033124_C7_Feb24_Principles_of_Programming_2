@@ -1,0 +1,26 @@
+@startuml
+class Employee1 {
+    - name: String
+    - age: int
+    - salary: float
+    + __str__(): String
+}
+
+class Employee2 {
+    - name: String
+    - age: int
+    - salary: float
+    - department: String
+    + __str__(): String
+}
+
+class ChildEmployee {
+    - role: String
+    - department: String
+    + __str__(): String
+}
+
+Employee1 <|-- ChildEmployee : inherits
+Employee2 <|-- ChildEmployee : inherits
+
+@enduml
